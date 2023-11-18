@@ -9,13 +9,15 @@
  */
 void _prerror(char **argv, int c, char **cmd)
 {
+	char *er;
+
 	if (cmd == NULL || cmd[1] == NULL)
 	{
 		PRINTER("Error: invalid command\n");
 		return;
 	}
 
-	char *er = _itoa(c);
+	er = _itoa(c);
 
 	PRINTER(argv[0]);
 	PRINTER(": ");

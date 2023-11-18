@@ -9,10 +9,10 @@
 
 char *comments(char *line)
 {
+	int i;
+
 	if (line == NULL)
 		return (NULL);
-
-	int i;
 
 	for (i = 0; line[i] != '\0'; i++)
 	{
